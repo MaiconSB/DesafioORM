@@ -23,8 +23,8 @@ public class Participante {
 	private String email;
 	
 	@ManyToMany
-	@JoinTable(name = "tb_atividade_participante", joinColumns = @JoinColumn(name = "atividade_id"),
-		inverseJoinColumns = @JoinColumn(name = "participante_id"))
+	@JoinTable(name = "tb_atividade_participante", joinColumns = @JoinColumn(name = "participante_id"),
+		inverseJoinColumns = @JoinColumn(name = "atividade_id"))
 	private Set<Atividade> atividades = new HashSet<>();
 	
 	public Participante() {}

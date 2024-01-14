@@ -31,7 +31,6 @@ public class Bloco {
 	
 	private Bloco() {}
 
-
 	public Bloco(Long id, Instant inicio, Instant fim, Atividade atividade) {
 		this.id = id;
 		this.inicio = inicio;
